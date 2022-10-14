@@ -48,8 +48,7 @@
       </a>
       <ul>
         <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#container">About</a></li>
         <li><a href="#project">Project</a></li>
       </ul>
 
@@ -101,88 +100,75 @@
     <!--?======================== Home end ========================= -->
 
     <!--?======================== About start ========================= -->
-    <section class="about" id="about">
+      
       <!--? about me start -->
-      <h2 class="heading">Who am I?</h2>
-      <div class="about-me">
-        <div class="foto">
-          <img data-tilt src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt9bfce960720f81ca/6170934b191c4a10e9504399/82bb5a24a46d981c4f2b56ddd363b8dcca326dcd.jpg" \>
+      <div id="container" class="container">
+        <div id="tabs" class="tabs-container">
+    
+            <div class="tabs">
+                <a id="tab1" data-tab="1" class="tab">Mercury</a>
+                <a id="tab2" data-tab="2" class="tab">Venus</a>
+                <a id="tab3" data-tab="3" class="tab">Earth</a>
+                <a id="tab4" data-tab="4" class="tab">Mars</a>
+            </div>
+    
+            <div class="content">
+                <div id="tabcontent1" data-tab="1" class="tabcontent">
+                  <p>Mercury is the smallest and innermost planet in the Solar System.</p>
+                  <p>Its orbit around the Sun takes 87.97 days, the shortest of all the planets in the Solar System.</p>
+                  <p>It is named after the Roman deity Mercury, the messenger of the gods.</p>
+                  <p class="read-more-link"><a href="https://en.wikipedia.org/wiki/Mercury_(planet)" target="_blank">Learn more<span class="icon">➡️</span></a></p>
+                </div>
+                <div id="tabcontent2" data-tab="2" class="tabcontent">
+                      <p>Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty.</p>
+                      <p>Venus orbits the Sun every 224.7 Earth days.</p>
+                     <p>As the second-brightest natural object in the night sky after the Moon, Venus can cast shadows and, rarely, is visible to the naked eye in broad daylight.</p>
+                      <p class="read-more-link"><a href="https://en.wikipedia.org/wiki/Venus" target="_blank">Learn more<span class="icon">➡️</span></a></p>
+                </div>
+                <div id="tabcontent3" data-tab="3" class="tabcontent">
+                    <p>Earth is the third planet from the Sun.</p>
+                    <p>Earth orbits around the Sun in 365.256 days, a period known as an Earth sidereal year. During this time, Earth rotates about its axis about 366.256 times.</p>
+                  <p>Earth's axis of rotation is tilted with respect to its orbital plane, producing seasons on Earth.</p>
+                      <p class="read-more-link"><a href="https://en.wikipedia.org/wiki/Earth" target="_blank">Learn more<span class="icon">➡️</span></a></p>
+                </div>
+                <div id="tabcontent4" data-tab="4" class="tabcontent">
+                    <p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System after Mercury.</p>
+                    <p> In English, Mars carries a name of the Roman god of war and is often referred to as the 'Red Planet'. The latter refers to the effect of the iron oxide prevalent on Mars' surface.</p>
+                    <p>Mars is a terrestrial planet with a thin atmosphere.</p>
+                      <p class="read-more-link"><a href="https://en.wikipedia.org/wiki/Mars" target="_blank">Learn more<span class="icon">➡️</span></a></p>
+                </div>
+            </div>
+    
         </div>
-        <div class="about-desc">
-          <p>
-            Cristiano Ronaldo dos Santos Aveiro GOIH ComM (Portuguese pronunciation: [kɾiʃˈtjɐnu ʁɔˈnaɫdu]; born 5 February 1985) is a Portuguese professional footballer who plays as a forward for Premier League club Manchester United and captains the Portugal national team. Often considered the best player in the world and widely regarded as one of the greatest players of all time, Ronaldo has won five Ballon d'Or awards[note 3] and four European Golden Shoes, the most by a European player. He has won 32 trophies in his career, including seven league titles, five UEFA Champions Leagues, and the UEFA European Championship.          
-                      </p>
-          <a href="https://www.youtube.com/watch?v=xcfft9RCM6I" class="cv"
-            ><span>Download CV <i class="fas fa-download"></i></span>
-            <i class=""></i>
-          </a>
+      
+        <div class="dark-mode-switch">
+            
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-switch">
+              
+            </label>
         </div>
-      </div>
+      
+    </div>
+    
+    
+    
+    
+    
+    <!-- ---------------------- -->
+    
+    <div class="small-screen">
+        <div class="small-screen-content tabcontent">
+            <p>You're going to need a bigger display my friend.</p>
+            <p class="read-more-link"><a href="https://www.samsung.com/uk/monitors/monitor-c49j89-lc49j890dkuxen/" target="_blank">Learn more<span class="icon">➡️</span></a></p>
+        </div>
+    </div>
       <!--? about me end -->
     </section>
     <!--?======================== About end ========================= -->
     
     <!--?======================== Skills start ========================= -->
-    <section class="skills" id="skills">
-      <h2 class="heading"><i class="fas fa-laptop-code"></i> My Skills</h2>
-
-      <div class="u-center">
-        <section class="skills">
-            <div class="skill">
-                <h3 class="skill__type">HTML</h3>
-                <div class="skill__outer-bar">
-                    <div class="skill__inner-bar skill__inner-bar--100"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <h3 class="skill__type">CSS</h3>
-                <div class="skill__outer-bar">
-                    <div class="skill__inner-bar skill__inner-bar--90"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <h3 class="skill__type">JS</h3>
-                <div class="skill__outer-bar">
-                    <div class="skill__inner-bar skill__inner-bar--80"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <h3 class="skill__type">PHP</h3>
-                <div class="skill__outer-bar">
-                    <div class="skill__inner-bar skill__inner-bar--70"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <h3 class="skill__type">SQL</h3>
-                <div class="skill__outer-bar">
-                    <div class="skill__inner-bar skill__inner-bar--60"></div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div class="u-right">
-      <section class="skills">
-          <div class="skill">
-              <h3 class="skill__type">English</h3>
-              <div class="skill__outer-bar">
-                  <div class="skill__inner-bar skill__inner-bar--100"></div>
-              </div>
-          </div>
-          <div class="skill">
-              <h3 class="skill__type">Malayalam</h3>
-              <div class="skill__outer-bar">
-                  <div class="skill__inner-bar skill__inner-bar--90"></div>
-              </div>
-          </div>
-          <div class="skill">
-              <h3 class="skill__type">Hindi</h3>
-              <div class="skill__outer-bar">
-                  <div class="skill__inner-bar skill__inner-bar--80"></div>
-              </div>
-          </div>
-      </section>
-  </div>
-    </section>
+   
     <!--?======================== Skills end ========================= -->
 
     <!--?======================== Project start ========================= -->
@@ -260,6 +246,7 @@
           </div>
         </div>
       </div>
+      
 
       <h1 class="credit">Made with <i class="fa fa-heart pulse"></i> by <a href="https://github.com/gauthamjb"> Gautham JB</a></h1>
     </footer>

@@ -391,8 +391,8 @@ nav ul li a:hover {
 
 .tabs a {
     cursor: pointer;
-    padding: 12px 24px;
-    width: 120px;
+    padding: 12px 12px;
+    width: 140px;
     text-align: center;
     font-weight: bold;
     border-radius: 18px;
@@ -724,6 +724,7 @@ body
   height:100%;
   width:100%;
   position:absolute;
+  object-fit: cover;
   top:0;
   left:0;
   z-index:0;

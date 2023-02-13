@@ -56,7 +56,7 @@ $('a[href*="#"]').on("click", function (e) {
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-  strings: ["frontend development", "web development"],
+  strings: ["Hardware development", "Hardware Security"],
   loop: true,
   typeSpeed: 50,
   backSpeed: 25,

@@ -2,10 +2,10 @@
 document.addEventListener("visibilitychange", function () {
   if (document.visibilityState === "visible") {
     document.title = "Portfolio | GTM";
-    $("#favicon").attr("href", "assets/img/foto/logo.png");
+    $("#favicon").attr("href", "assets/img/foto/gtmcirclesvgpng.png");
   } else {
-    document.title = "Welcome to My Portfolio";
-    $("#favicon").attr("href", "assets/img/foto/favicon.png");
+    document.title = "GauthamJB";
+    $("#favicon").attr("href", "assets/img/foto/hero.svg");
   }
 });
 

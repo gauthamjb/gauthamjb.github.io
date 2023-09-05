@@ -313,7 +313,7 @@ nav ul li a:hover {
   }
   .home div.foto img {
     width: 70%;
-    margin: 10rem 50% auto;
+    margin: 10rem 18% auto;
     
   }
   .home div.content {
@@ -914,7 +914,7 @@ footer {
   height: auto;
   width: 100vw;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   color: #fff;
 }
 

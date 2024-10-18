@@ -4,37 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keyword" content="gauthamjb, Gautham_JB, Gautham" />
+    <meta name="keyword" content="GauthamJB, Gautham_JB, Gautham" />
     <meta name="author" content="Gautham JB" />
     <meta name="description" content="Portfolio GTM " />
-    <title>Project | Portfolio Gautham JB</title>
+    <title>GTM</title>
 
     <!--? font -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;500;600;700;800;900&display=swap" rel="stylesheet" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat&family=Poppins&family=Qwitcher+Grypen&family=Tilt+Prism&family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
     <!--? Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--? Main CSS -->
-    <link rel="stylesheet" href="style.css" />
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!--? Favicon -->
-    <link id="favicon" rel="shortcut icon" href="../assets/img/foto/logo.png" type="image/x-png" />
+    <link id="favicon" rel="shortcut icon" href="assets/img/foto/gtmcirclesvgpng.png" type="image/x-png" />
   </head>
-  <body>
+  <body class="hidden">
+    <!--?======================== Preloader start ========================= -->
+    <div class="preloader" id="preloader">
+      <div class="loading">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5.997cm" height="3.492cm">
+          <image
+            x="0px"
+            y="0px"
+            width="170px"
+            height="99px"
+            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKoAAABjCAMAAAA8T2vMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACmlBMVEUAd/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/////9GjV3OAAAA3HRSTlMACBwtP1p1jKO4wM3W293ezL+3oItyWD0rGQcBGzdgjrvc8vz78NmJMxcKWZjO8e3JkVMnBipinvmXWyQDOXjD9XE0e/7Ecyx0wmkUQezkljVevLRRDm7PxmEJ32fSXFTQSbqsE4r68wtWopDh/dRDDcWwfGpLMCkoLkBOdtPufgTmwZU6HoCz4iXohBEPaOBSBUIVfRi99nk4y6sM17WP5yBH6x9d+KY+AoM8yGZP6SOo6thfVe96HaS59EUv0bI7ho2FIq0QY20Sx3CUqpqnvspXr6GxUBrjbEwWsFzSqgAAAAFiS0dE3XBnsyEAAAAHdElNRQfmBxUSHiVZybUEAAAE1UlEQVR42tWb/V8URRjAjxIwRZIzCDk47/B4CQUJjo4uyPBQCo3OinzBlxLBlECOKDJFsCI0jBI00RILISGzrhTf8AWsjF7svexl/5h2b+/wOGZ3n92dnbn7/rrPPPv9zM1nZ+aZOZ1OA8LuuHNaeETk9LtmzIyaFX139Kyo2TH6OffExt0bPzdBixcqwZCYZJxnMifPZ9BYUlL1aeHp91HWzIhfsDAzi4GwKPv+nFwrJc+8B2xmC0jTR37Ug/aHSGsWFD68OF+Wpo9HTEXpBEWXOGYq0vRSvHRZCRHPxEcfK1Yjyg8FU+lyrUVX2B5X7clT9oRTQ0/ryicxeXqwPPW0QRvR8mdW4RT1sHrNWg1EIyqwi3JErcM8mSWUmjUR5Vi/AeMwMGx8VjNRjqXP4TJdsklTUY7KPByim6uqNTdlmC2O51WbbtVukE4mU+UoSNxGSJSjZrMK05wXFLyx2FKdX12rxLVuu1LR+hrwS5KjXQ22eS82hr80Lenl+KZXmnY4X91p3BU5R9+8W4ZrbUurIlPnbEj2Pa+9XrTxjbYMoSwFcwvtb7bvhcrG7FNgakyRSvvWpg67cz8o2duFndveAbmWvStX9IDEj19WWdTVLS9ledfBbMByvNYhL+2h90SSHXb1HIF1ZiCGvNij0rLvfyAjZckxwTzJvUZV26MC5/EPpVyzPwKn6zshkCNFv7JfjSdP9xqXhGu0E5hq4GN0gsxdGDx5treL73Wz+kBpSpGNd58cHMIlypHUMF/M9XAcIEcE8hf5pA2np4dTJtGO7ZFM4EC0+vR0PXZRjs+yxVxrJFr3TG3iCi/QRJTFuuxzEdcB0baxU+KP2rEO0UDcXwirfilWKugMjD5zVvOK2LDwhNsp3CouYL1/7ryySUkeFy4KqV4SbDM4Mjlyei4BUY5GgZVRqlCD+MlDvPkyIVGWK1eRqnsFwvfX+UdZOsrJmbIvP4lSNaODh675B60aJSnKYmhBqLrQsWN+IbXXiXYpz9ktU1RbkIE5/kNkJ3lRlhWB67l8NyrM7bdZM+Gf7mGkB3xhx1BBCYtvB3zVSslUp8tNnfRVRZYI0yaeZw3IzY+Try/dNv3mBipicGLpWHGKpinLt95yc9048vF3E/3+PbZlvmKsXT9EXo/tC0M//dFn2q6maESCUV996aYGdXmsZKz3mtponYCCOe81/Umjgxl8tHkXYLagN9Xd5E1/PkBbRJJB/rxUH/TjVKf7xWP6K4mNiUp+4+co+l9+SayeaSylkLYHgK2eTt1AWwOA1VPtlyq4BAXDnGlMK20NAENcRXYR8Ss6ShjlOhVSx6TP76zpH7QlQOyzsJvTQ7QtQHA7/2HaEiDCKhjmT9oSMP5it6dNtCVg9DJMB20HGLeymL9DYD3F8Q/DNNJ2AKJnjoXAcpqjf4Qx0nYAMs6YM9RnIUKD2ElLULH83Ikb6rMQ4V+mirYClDHmCm0FIIbmGbQVoLgZqsVpOSwYkXnxiB7He2kbgFl9mrYBlO6rt2grQDlSSdsAjP0gbQMwji7aBmCqaP+lDEx9mqaXfHDiHlefgxA7FN++Jq8aEsU/XjXYj1L9VNX/B4MUJa20DcD0B/8ZpY//aAvACZW9KkuY+hSkCJFaFUfwn6eHoqpmt7yx8z+ECzGqLlYmwwAAAABJRU5ErkJggg=="
+          />
+        </svg>
+      </div>
+    </div>
+    <!--?======================== Preloader end ========================= -->
+
     <!--?======================== Navbar start ========================= -->
     <nav class="navbar">
-      <a href="/" class="logo">
-        <img src="/myportfolio/assets/img/foto/logo.png" alt="logo" style="width: 40px; height: 40px" />
-        <h4>Gautham JB</h4>
+      <a href="" class="logo">
+        <h4>GTM </h4>
       </a>
       <ul>
-        <li><a href="/#home">Home</a></li>
-        <li><a href="/#about">About</a></li>
-        <li><a href="/#skills">Skills</a></li>
-        <li><a class="active" href="#project">Project</a></li>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#qualification">About</a></li>
+        <li><a href="#project">Project</a></li>
       </ul>
 
       <div class="menu-toggle">
@@ -46,35 +61,242 @@
     </nav>
     <!--?======================== Navbar end ========================= -->
 
-    <!--?======================== Project start ========================= -->
- </div>
-            </div>
-          </div>
-        </div>
+    <!--?======================== Home start ========================= -->
+    <section class="home" id="home">
+      <div id="particles-js">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+        <script>VANTA.WAVES({
+          el: "#particles-js",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0x233555,
+          waveHeight: 15.50,
+          waveSpeed: 1.50
+        })
+        </script>
       </div>
-
-      <div class="back">
-        <a href="/#project" class="btn">
-          <i class="fas fa-arrow-left"></i>
-          <span> back to home</span>
-        </a>
+      <div class="foto">
+        <img data-tilt data-tilt-full-page-listening src="assets/img/foto/gtmcirclesvgpng.png"  />
+      </div>
+      <div class="content">
+        <h2>
+          Hello, I'm<br />
+          Gautham Kannan JB
+        </h2>
+        <p>i am into <span class="typing-text"></span></p>
+        
+        <!-- <a href="assets/img/foto/Gautham_Kannan JB_Resume.pdf" class="cv"
+          ><span>Download CV </span>
+          <i class=""></i>
+        </a> -->
       </div>
     </section>
+    <!--?======================== Home end ========================= -->
+
+    <!--?======================== About start ========================= -->
+      
+      <!--? about me start -->
+      <section id="qualification" class="section qualification">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Qualification</h2>
+                    <span class="section__subtitle">Experience & Education</span>
+                </div>
+                <!--= Professional Experience =-->
+                <div class="qualification__wrapper">
+                    <h3 class="qualification__name">
+                        <i class="ri-briefcase-fill"></i>
+                        Professional Experience
+                    </h3>
+                    <div class="d-grid qualification__content">
+                      <!--= Experience 0 =-->
+                      <div class="qualification__item">
+                        <h3 class="qualification__title">Automotive Cybersecurity Engineer at SBD Automotive India</h3>
+                        <p class="qualification__description"> Part of the Cyber Security team focusing on penetration testing of vehicles, embedded devices and general automotive security.
+                          </p>
+
+                        <span class="qualification__date">2024</span>
+                    </div>
+                        <!--= Experience 1 =-->
+                        <div class="qualification__item">
+                            <h3 class="qualification__title">Research Intern at Traboda Cyberlabs</h3>
+                            <p class="qualification__description"> Research Intern involved in designing and testing a 
+                              PCB badge for the IC3 conference, creating challenges, and conducting the hardware CTF..</p>
+
+                            <span class="qualification__date">2023</span>
+                        </div>
+                        <!--= Experience 2 =-->
+                        <div class="qualification__item">
+                            <h3 class="qualification__title">Bi0s Hardware</h3>
+                            <p class="qualification__description"> Member and Mentee of a team focused on securing devices from physical attacks,
+                               specializing in embedded development and CTF competitions.</p>
+                            <span class="qualification__date">2020 - Present</span>
+                        </div>
+                        <!--= Experience 3 =-->
+                        <div class="qualification__item">
+                            <h3 class="qualification__title">Keltron Knowledge Center </h3>
+                            <p class="qualification__description"> Internship involving an Embedded Systems/IOT
+                               project using Arduino Uno and ESP8266 NodeMCU to control lighting remotely through a web page.</p>
+                            <span class="qualification__date">2022</span>
+                        </div>
+                    </div>
+                </div>
+                <!--= Education =-->
+                <div class="qualification__wrapper">
+                    <h3 class="qualification__name">
+                        <i class="ri-booklet-fill"></i>
+                        Education
+                    </h3>
+                    <div class="d-grid qualification__content">
+                        <!--= Education 1 =-->
+                        <div class="qualification__item">
+                            <h3 class="qualification__title">Electronics And Communication Engineering</h3>
+                            <p class="qualification__description"> B.Tech in Electronics And Communication Engineering 
+                              from Amrita School of Engineering, Amritapuri, Kollam, from 2020 to 2024 with a CGPA of 8.7.</p>
+                            <span class="qualification__date">2020 - 2024</span>
+                        </div>
+                        <!--= Education 2 =-->
+                        <div class="qualification__item">
+                            <h3 class="qualification__title">AISSCE</h3>
+                            <p class="qualification__description"> AISSCE from Bharatiya Vidya Bhavan Perumthiruthi, Kozhikode, from 2018 to May 
+                              2020 with a percentage of 89, specializing in Physics, Chemistry, and Maths with Biology.</p>
+                            <span class="qualification__date">2020</span>
+                        </div>
+                        <!--= Education 3 =-->
+                        <div class="qualification__item">
+                            <h3 class="qualification__title">AISSE</h3>
+                            <p class="qualification__description"> AISSE from Bharatiya Vidya Bhavan Perumthiruthi,
+                               Kozhikode, from 2014 to 2016 with a percentage of 91.6.</p>
+                            <span class="qualification__date">2018</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="qualification__footer">
+                    <!-- <p class="qualification__footer-text">See my full resume</p> -->
+                    <a href="assets/img/foto/Gautham_Kannan JB_Resume.pdf" class="btn btn--primary">Resume</a>
+                </div>
+            </div>
+        </section>
+      
+    </div>
+    
+    
+    
+    
+    
+    <!-- ---------------------- -->
+    
+    <div class="small-screen">
+        <div class="small-screen-content tabcontent">
+            <p>You're going to need a bigger display my friend.</p>
+            <p class="read-more-link"><a href="https://www.samsung.com/uk/monitors/monitor-c49j89-lc49j890dkuxen/" target="_blank">Learn more<span class="icon">➡️</span></a></p>
+        </div>
+    </div>
+      <!--? about me end -->
+    </section>
+    <!--?======================== About end ========================= -->
+    
+    <!--?======================== Skills start ========================= -->
+   
+    <!--?======================== Skills end ========================= -->
+
+    <!--?======================== Project start ========================= -->
+    
+    <section id="project" class="section project">
+      <div class="container">
+          <div class="section__header">
+              <h2 class="section__title">Projects</h2>
+              <span class="section__subtitle">My recent work</span>
+          </div>
+          <div class="d-grid project__wrapper">
+              <!--= project 1 =-->
+              <div class="project__content">
+                  <img src="assets/img/foto/ic333.png" alt="Agency Website" class="project__img">
+                  <h3 class="project__title">IC3 Badge</h3>
+                  <p class="project__description"> Organized IC3 2023 Hardware CTF competition with custom PCB badge.
+                     Designed and developed custom PCB. Created Side-Channel Attack (SCA) challenge for AES encryption.
+
+                  </p>
+                  <a href="https://www.ic3.games/" class="project__link">View Project
+                      <i class="ri-arrow-right-line"></i></a>
+              </div>
+              <!--= project 2 =-->
+              <div class="project__content">
+                  <img src="assets/img//foto/compatriot.png" alt="CompatrIoT " class="project__img">
+                  <h3 class="project__title">CompatrIoT</h3>
+                  <p class="project__description"> Developed custom hardware security board
+                     for beginners, adaptable for diverse applications. Covered OT, IoT, and Automotive security fundamentals.</p>
+                  <a href="https://traboda.com/training/compatriot" class="project__link">View Project
+                      <i class="ri-arrow-right-line"></i></a>
+              </div>
+              <!--= project 4 =-->
+              <div class="project__content">
+                <img src="assets/img/foto/file.png" alt="Target Build For Fault Injection" class="project__img">
+                <h3 class="project__title">Target Build For Fault Injection</h3>
+                <p class="project__description">Designed and developed target pcb boards, which is compactible to the connections of a chiphwisperer to perform fault characterisation of different MCU's.
+                </p>
+                <a href="https://www.sbdautomotive.com/security" class="project__link">View Project
+                    <i class="ri-arrow-right-line"></i></a>
+            </div>
+              <!--= project 3 =-->
+              <div class="project__content">
+                  <img src="assets/img/foto/mitre.png" alt="MITRE ECTF" class="project__img">
+                  <h3 class="project__title">MITRE ECTF</h3>
+                  <p class="project__description"> Participated in MITRE eCTF, focusing on car-key fob
+                     communication security. Developed robust encryption-based communication protocol, conducted
+                      extensive testing against various attack scenarios.
+                  </p>
+                  <a href="https://mitre-engenuity.org/growing-impact/ectf-embedded-capture-the-flag/" class="project__link">View Project
+                      <i class="ri-arrow-right-line"></i></a>
+              </div>
+              
+          </div>
+      </div>
+  
+  </section>
     <!--?======================== Project end ========================= -->
 
+    <!--?======================== Footer start ========================= -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <footer>
+
+      <div class="footer-content">
+  
+        <h3>Gautham JB's Portfolio</h3>
+  
+        <p>Contact Me</p>
+  
+        <ul class="socials">
+          
+          <li><a href="https://twitter.com/gautm_11"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/gautham_jb/"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://github.com/gauthamjb"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/gauthamjb/"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+  
+      </div>
+  
+    </footer>
+    <!--?======================== Footer end ========================= -->
     <!--?======================== Scroll Up ========================= -->
-    <a href="#home" aria-label="ScrollTop" class="fas fa-arrow-up" id="scroll-top"></a>
     <!--?======================== Scroll Up ========================= -->
+
     <!--? jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <!--? AOS  -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <!--? typed.js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--? Tilt-Vannila.js -->
+    <script src="assets/js/vanilla-tilt.min.js"></script>
 
     <!--? Main JavaScript -->
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

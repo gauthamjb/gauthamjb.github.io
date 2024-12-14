@@ -78,7 +78,13 @@ html::-webkit-scrollbar-thumb:hover {
     transform: rotate(360deg);
   }
 }
-
+#particles-js {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 /*?======================== Preloader end ========================= */
 
 /*?======================== Navbar start =========================*/
@@ -599,7 +605,7 @@ body {
 
 .d-grid {
   display: grid;
-  gap: 3rem;
+  gap: 5rem;
 }
 
 .btn {
@@ -638,6 +644,7 @@ body {
 --------------------------------------------------------------*/
 .qualification__wrapper {
   margin-bottom: 5rem;
+  
 }
 
 .qualification__content {
@@ -651,6 +658,7 @@ body {
   margin-bottom: 5rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--color-border);
+  justify-content: center;
 }
 
 .qualification__title {
@@ -805,6 +813,7 @@ body {
 
   .qualification__content {
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
   }
 
   .qualification__footer {
@@ -816,6 +825,7 @@ body {
 
   .qualification__footer-text {
     margin: 0;
+    justify-content: center;
   }
 
   .project__wrapper {
@@ -871,7 +881,8 @@ body {
   .qualification__content,
   .service__wrapper,
   .project__wrapper {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 30%);
+    
   }
 
   .contact__wrapper {

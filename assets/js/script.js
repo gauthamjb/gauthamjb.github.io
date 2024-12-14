@@ -55,13 +55,13 @@ $('a[href*="#"]').on("click", function (e) {
 });
 
 // <!-- typed js effect starts -->
-var typed = new Typed(".typing-text", {
-  strings: ["Hardware development", "Hardware Security"],
-  loop: true,
-  typeSpeed: 50,
-  backSpeed: 25,
-  backDelay: 500,
-});
+// var typed = new Typed(".typing-text", {
+//   strings: ["Hardware development", "Hardware Security"],
+//   loop: true,
+//   typeSpeed: 50,
+//   backSpeed: 25,
+//   backDelay: 500,
+// });
 
 // scroll up pop up
 let offset = 0;
